@@ -25,20 +25,21 @@
         <!-- Title Section -->
         <header class="mb-16">
             <span class="text-blue-500 font-bold tracking-widest uppercase text-sm">Learning Milestone</span>
-            <h1 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 mb-6">在此輸入專題名稱 (例如：折射公式推導)</h1>
-            <p class="text-xl text-gray-500">這是一篇關於我們如何整合地球物理理論與資料科學工具的詳細記錄。</p>
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 mb-6">折射公式推導</h1>
+            <p class="text-xl text-gray-500">臨界距離Xcr的推導與意義。</p>
         </header>
 
         <!-- 區塊一：內容簡介與理論 -->
         <section class="mb-20">
             <h2 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">一、理論摘要與過程</h2>
             <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 mb-10">
-                <p class="mb-4 text-gray-700">在這裡輸入您的文字內容。例如折射公式的推導邏輯、演講的核心觀點，或者是與 AI (ChatGPT/Gemini) 對話協助程式撰寫的過程。</p>
+                <p class="mb-4 text-gray-700">什麼時候折射波會追上直達波？。</p>
                 <div class="bg-gray-900 text-gray-100 p-6 rounded-xl font-mono text-sm overflow-x-auto my-6 italic">
-                    # 若為程式碼區塊範例<br>
-                    import obspy<br>
-                    st = obspy.read("seismic_data.sac")<br>
-                    st.plot()
+1. 物理意義：臨界距離（Crossover Distance）
+                    直達波（Direct Wave）：直接沿地表傳播，速度較慢（V1），其走時曲線通過原點。
+                    折射波（Refracted Wave/Head Wave)：先向下進入高初速層(V2)，沿界面滑行後再折射回地表。
+                    雖然路徑長，但因為 V2> V1，在足夠遠的地方它會比直達波先抵達。Xcr：兩條走時曲線的交點。
+                    在此距離，直達波與折射波同時到達。
                 </div>
             </div>
 
