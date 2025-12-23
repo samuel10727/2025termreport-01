@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數位工具教學：HF, GitHub, Blogger | 地球物理通論</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tool-card { transition: all 0.3s ease; }
+        .tool-card:hover { transform: translateY(-5px); }
+        .bg-gradient-tech { background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- Navbar: 已連結至主網頁 index.html -->
+    <nav class="sticky top-0 bg-white/90 backdrop-blur shadow-sm z-50 py-4 px-6">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-blue-600 font-bold flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i> 返回主進度表
+            </a>
+            <span class="text-gray-400 text-sm italic underline">Digital Skillset Workshop</span>
+        </div>
+    </nav>
+
+    <article class="max-w-4xl mx-auto py-16 px-6">
+        
+        <!-- Title Section -->
+        <header class="mb-16 text-center">
+            <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">Tech Stack Introduction</span>
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 mb-6">地球物理雲端工具箱</h1>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto">在現代地球物理學中，數據的展示、管理與記錄與理論同等重要。本網頁將介紹三項核心數位工具。</p>
+        </header>
+
+        <!-- 工具一：GitHub & Codespace -->
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-slate-900 text-white rounded-xl flex items-center justify-center text-2xl shadow-lg">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h2 class="text-2xl font-bold">GitHub & Codespace: 程式碼的家</h2>
+            </div>
+            
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 mb-8">
+                <h3 class="text-lg font-bold text-blue-600 mb-3">為什麼地球物理需要它？</h3>
+                <p class="text-gray-700 mb-6">GitHub 是全球最大的版本控制平台。透過 <strong>Codespace</strong>，我們可以直接在雲端瀏覽器撰寫 <code>ObsPy</code> 或 <code>PyGMT</code> 程式，無需在個人電腦安裝複雜的環境。</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 text-sm">
+                    <div class="border-l-2 border-slate-200 pl-4">
+                        <h4 class="font-bold text-slate-700">Step 1: 建立 Repository</h4>
+                        <p class="text-gray-500">將課程所有的 .ipynb 或 .html 檔案集中管理。</p>
+                    </div>
+                    <div class="border-l-2 border-slate-200 pl-4">
+                        <h4 class="font-bold text-slate-700">Step 2: 啟動 Codespace</h4>
+                        <p class="text-gray-500">點擊 "Code" > "Codespaces" 即可開啟雲端 VS Code 環境。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 圖片預留區: GitHub 介面截圖 -->
+            <div class="group relative mb-10">
+                <div class="w-full h-64 bg-slate-200 rounded-3xl border-2 border-dashed border-slate-300 flex flex-col items-center justify-center text-slate-400 group-hover:bg-slate-100 transition">
+                    <i class="fas fa-terminal text-4xl mb-3"></i>
+                    <p class="font-bold">請在此上傳 GitHub Codespace 操作截圖</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工具二：Hugging Face Spaces -->
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-yellow-400 text-white rounded-xl flex items-center justify-center text-2xl shadow-lg">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Hugging Face Spaces: 互動展示平台</h2>
+            </div>
+            
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 mb-8">
+                <h3 class="text-lg font-bold text-yellow-600 mb-3">將數據轉化為應用 (Web App)</h3>
+                <p class="text-gray-700 mb-6">Hugging Face 不只是 AI 模型的集散地，其 <strong>Spaces</strong> 功能讓地球物理數據能以 <code>Gradio</code> 或 <code>Streamlit</code> 呈現互動介面，讓非專業人士也能點擊分析震測資料。</p>
+                
+                <ul class="space-y-3 text-gray-600 italic">
+                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-yellow-500 mt-1"></i> 支持 Python 為主導的互動開發</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-yellow-500 mt-1"></i> 免費部署，且具備強大的社群開源資源</li>
+                </ul>
+            </div>
+
+            <!-- 圖片預留區: Hugging Face 成果 -->
+            <div class="w-full h-64 bg-yellow-50 rounded-3xl border-2 border-dashed border-yellow-200 flex flex-col items-center justify-center text-yellow-600/50 mb-4">
+                <i class="fas fa-rocket text-4xl mb-3"></i>
+                <p class="font-bold">請在此上傳您的 Hugging Face 互動 App 截圖</p>
+            </div>
+        </section>
+
+        <!-- 工具三：Google Blogger -->
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center text-2xl shadow-lg">
+                    <i class="fas fa-pen-nib"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Google Blogger: 學習日誌與反思</h2>
+            </div>
+            
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 mb-8">
+                <h3 class="text-lg font-bold text-orange-600 mb-3">科學家為什麼要寫部落格？</h3>
+                <p class="text-gray-700 mb-4">記錄是科學研究的基石。透過 Google Blogger，我們可以系統化地整理每一週的野外筆記、推導過程以及與專家講座的心得。</p>
+                <div class="bg-orange-50 p-4 rounded-xl text-orange-800 text-sm">
+                    <strong>教學重點：</strong> 建議每篇文章包含「理論目標」、「實作截圖」與「錯誤修正 (Debug)」三個部分。
+                </div>
+            </div>
+
+            <!-- 圖片預留區: Blogger 介面 -->
+            <div class="w-full h-64 bg-orange-100 rounded-3xl border-2 border-dashed border-orange-200 flex flex-col items-center justify-center text-orange-400 mb-4">
+                <i class="fas fa-blog text-4xl mb-3"></i>
+                <p class="font-bold">請在此上傳您的 Google Blogger 頁面截圖</p>
+            </div>
+        </section>
+
+        <!-- 心得反思 -->
+        <section class="bg-gradient-tech text-white p-10 rounded-[3rem] shadow-xl">
+            <h2 class="text-2xl font-bold mb-4 italic"><i class="fas fa-tools mr-2"></i> 老師的數位工具小建議</h2>
+            <p class="text-blue-100 leading-relaxed">
+                作為地球物理家，程式碼就是我們的實驗器材。掌握 GitHub 能讓你與全球研究者協作，Hugging Face 能展現你的數據說服力，而 Blogger 則是你的數位大腦。希望各位同學能善用這些工具，建立起屬於自己的學術品牌。
+            </p>
+        </section>
+
+    </article>
+
+    <footer class="bg-gray-100 py-12 text-center text-gray-400 text-sm">
+        <p>地球物理通論 | 數位工具教學專題</p>
+    </footer>
+
+</body>
+</html>
