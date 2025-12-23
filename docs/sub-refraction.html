@@ -53,16 +53,14 @@
 </div>
         <!-- 區塊二：技術實踐 -->
         <section class="mb-20">
-            <h2 class="text-2xl font-bold mb-6 border-l-4 border-purple-500 pl-4">二、技術實踐與結果</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- 圖片預留區 B -->
-                <div class="h-64 bg-gray-200 rounded-3xl border-4 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
-                    <i class="fas fa-chart-line text-4xl mb-2"></i>
-                    <p class="text-xs font-bold text-center px-4">圖片預留區 (例如：PyGMT 地圖成果、ObsPy 波形圖)</p>
-                </div>
+            <h2 class="text-2xl font-bold mb-6 border-l-4 border-purple-500 pl-4">二、Xcr在地球物理中的意義</h2>
                 <div class="flex flex-col justify-center">
                     <p class="text-gray-600 italic border-l-2 border-gray-200 pl-4 text-sm leading-relaxed">
-                        在這裡您可以描述圖片中的數據意義。例如：「透過 PyGMT 繪製的板塊邊界圖清楚顯示了環太平洋地震帶的分布情況，AI 輔助修正了經緯度座標的投影錯誤。」
+                    在野外調查中，科學家利用Xcr來達成以下目的：
+                        估算地層深度：如果我們能從紀錄中辨識出 Xcr，配合已知的層速度，就能直接反推地下的地層介面深度h。
+                        規劃測線長度：在設計野外施測時，如果目標是要測量深部地層，那麼受波器（Geophones）擺放的總長度必須遠大於Xcr，否則儀器永遠錄不到折射波，探勘就會失敗。
+                        區分層位：透過走時曲線斜率的改變（即 $X_{cr}$ 出現的地方），
+                        可以得知地下確實存在速度更高的岩層介面。
                     </p>
                 </div>
             </div>
