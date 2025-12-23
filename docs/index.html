@@ -3,88 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>地球物理通論 | 數位學習歷程</title>
+    <title>地球物理通論學習歷程 | 18週完整記錄</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
+        .course-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
-    <header class="hero-gradient text-white py-20 px-6 relative overflow-hidden">
-        <div class="max-w-6xl mx-auto relative z-10">
-            <h1 class="text-5xl font-extrabold mb-4 italic">Geophysics & Data Science</h1>
-            <p class="text-xl text-slate-300 max-w-2xl">地球物理通論筆記：從傳統探勘理論到 AI 與雲端資料處理的整合實踐。</p>
-            <div class="flex gap-4 mt-8">
-                <span class="bg-amber-500/20 text-amber-400 border border-amber-500/50 px-4 py-1 rounded-full text-sm"># 地球物理知識</span>
-                <span class="bg-blue-500/20 text-blue-400 border border-blue-500/50 px-4 py-1 rounded-full text-sm"># 資料處理技能</span>
+    <header class="hero-bg text-white py-16 px-6 text-center relative overflow-hidden">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">地球物理通論：數位學習歷程</h1>
+            <p class="text-blue-200 text-lg mb-8">Geophysics & Data Science: From Theory to AI Integration</p>
+            <div class="flex justify-center gap-4">
+                <a href="https://huggingface.co/spaces/cwadayi/Geophysics_class" target="_blank" class="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full transition shadow-lg text-sm font-bold">課程官方空間</a>
             </div>
         </div>
-        <!-- 背景裝飾圖示 -->
-        <i class="fas fa-wave-square absolute right-10 bottom-10 text-9xl text-slate-800 opacity-50"></i>
+        <i class="fas fa-globe-asia absolute -right-10 -bottom-10 text-9xl text-white/5"></i>
     </header>
 
-    <!-- 核心專題導覽 (子網頁入口) -->
-    <section class="max-w-6xl mx-auto py-16 px-6">
-        <h2 class="text-3xl font-bold mb-10 flex items-center">
-            <i class="fas fa-folder-open mr-3 text-blue-600"></i>核心專題總覽
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- 子網頁連結卡片 -->
-            <a href="refraction.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 card-hover">
-                <i class="fas fa-drafting-compass text-3xl text-amber-500 mb-4"></i>
-                <h3 class="font-bold text-lg">折射公式推導</h3>
-                <p class="text-sm text-slate-500 mt-2">Time-Distance Curve 與速度模型分析</p>
-            </a>
-            <a href="tech-tutorials.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 card-hover">
-                <i class="fas fa-cloud-upload-alt text-3xl text-blue-500 mb-4"></i>
-                <h3 class="font-bold text-lg">雲端工具教學</h3>
-                <p class="text-sm text-slate-500 mt-2">Hugging Face & Blogger 架設指南</p>
-            </a>
-            <a href="ai-coding.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 card-hover">
-                <i class="fas fa-robot text-3xl text-purple-500 mb-4"></i>
-                <h3 class="font-bold text-lg">AI 輔助程式撰寫</h3>
-                <p class="text-sm text-slate-500 mt-2">Codespace + ObsPy & PyGMT</p>
-            </a>
-            <a href="field-lectures.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 card-hover">
-                <i class="fas fa-mountain-sun text-3xl text-emerald-500 mb-4"></i>
-                <h3 class="font-bold text-lg">實驗與講座報告</h3>
-                <p class="text-sm text-slate-500 mt-2">野外震測報告與三位博士演講精華</p>
-            </a>
-        </div>
-    </section>
+    <main class="max-w-7xl mx-auto py-12 px-4">
+        
+        <!-- 核心學習專案 (子網頁連結區) -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-10 border-l-8 border-blue-600 pl-4">核心專題報告 (Sub-pages)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 卡片 1: 折射公式 -->
+                <a href="sub-refraction.html" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 course-card">
+                    <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4 text-amber-600 text-xl"><i class="fas fa-wave-square"></i></div>
+                    <h3 class="text-xl font-bold mb-2">折射公式推導</h3>
+                    <p class="text-gray-500 text-sm italic">Time-Distance Curve 與地震速度模型</p>
+                </a>
 
-    <!-- 18週課程時間軸 -->
-    <section class="max-w-6xl mx-auto py-16 px-6 bg-white rounded-3xl shadow-inner border border-slate-100">
-        <h2 class="text-3xl font-bold mb-12 text-center">課程進度時間軸</h2>
-        <div class="space-y-8">
-            <!-- 第1-2週範例 -->
-            <div class="flex flex-col md:flex-row gap-6 border-l-4 border-slate-200 ml-4 md:ml-0 pl-6 md:pl-0 relative">
-                <div class="md:w-1/4 font-bold text-slate-400">Week 01-02</div>
-                <div class="md:w-3/4 pb-8 border-b border-slate-100">
-                    <h4 class="text-xl font-bold text-slate-800">環境架設與折射探勘基礎</h4>
-                    <p class="text-slate-600 mt-2">學習 Python, Hugging Face 環境，並進入折射探勘理論學科。</p>
-                </div>
-            </div>
-            <!-- 第3週範例 -->
-            <div class="flex flex-col md:flex-row gap-6 border-l-4 border-amber-500 ml-4 md:ml-0 pl-6 md:pl-0">
-                <div class="md:w-1/4 font-bold text-amber-600">Week 03</div>
-                <div class="md:w-3/4 pb-8 border-b border-slate-100">
-                    <h4 class="text-xl font-bold text-slate-800 underline decoration-amber-300">校園野外實驗 (震測)</h4>
-                    <p class="text-slate-600 mt-2">實地進行折射探勘數據採集。</p>
-                </div>
-            </div>
-            <!-- 更多週次可依此類推... -->
-        </div>
-    </section>
+                <!-- 卡片 2: 技術教學 -->
+                <a href="sub-tutorials.html" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 course-card">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 text-xl"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-2">HF & Blogger 教學</h3>
+                    <p class="text-gray-500 text-sm italic">雲端空間部署與學習日誌架設</p>
+                </a>
 
-    <footer class="text-center py-10 text-slate-400 text-sm">
-        <p>© 2024 地球物理通論 學習歷程專案</p>
+                <!-- 卡片 3: AI 程式撰寫 -->
+                <a href="sub-ai-coding.html" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 course-card">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 text-purple-600 text-xl"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-xl font-bold mb-2">AI 輔助程式撰寫</h3>
+                    <p class="text-gray-500 text-sm italic">Codespace + ObsPy & PyGMT 實踐</p>
+                </a>
+
+                <!-- 卡片 4: 野外實驗 -->
+                <a href="sub-field-report.html" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 course-card">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600 text-xl"><i class="fas fa-mountain"></i></div>
+                    <h3 class="text-xl font-bold mb-2">野外震測實驗報告</h3>
+                    <p class="text-gray-500 text-sm italic">校園折射探勘數據採集與分析</p>
+                </a>
+
+                <!-- 卡片 5: 專家講座 -->
+                <a href="sub-lectures.html" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 course-card">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 text-red-600 text-xl"><i class="fas fa-microphone-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-2">地球物理專題演講</h3>
+                    <p class="text-gray-500 text-sm italic">甘禮有、黃有志、廖勿渝 博士</p>
+                </a>
+
+                <!-- 卡片 6: 重力探勘 -->
+                <a href="sub-gravity.html" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 course-card">
+                    <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4 text-gray-600 text-xl"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="text-xl font-bold mb-2">重力探勘作業</h3>
+                    <p class="text-gray-500 text-sm italic">板塊邊界繪圖與 PyGMT 應用</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- 18 週完整時間表 -->
+        <section>
+            <h2 class="text-3xl font-bold mb-10 border-l-8 border-gray-800 pl-4">課程進度時間表 (Schedule)</h2>
+            <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-gray-100">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-800 text-white">
+                            <th class="p-4">週次/日期</th>
+                            <th class="p-4">地球物理知識 (Domain Knowledge)</th>
+                            <th class="p-4">資料處理技能 (Technical Skills)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W1 (9/10)</td>
+                            <td class="p-4 text-sm">課程介紹、地球物理概要</td>
+                            <td class="p-4 text-sm">Python, HF, GitHub, Codespace, Dify 環境架設</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W2 (9/17)</td>
+                            <td class="p-4 text-sm font-semibold text-blue-600">折射探勘學</td>
+                            <td class="p-4 text-sm italic">pygmt, obspy, streamlit, gradio</td>
+                        </tr>
+                        <tr class="bg-blue-50">
+                            <td class="p-4 font-bold">W3 (9/24)</td>
+                            <td colspan="2" class="p-4 font-bold text-blue-800 text-center uppercase tracking-widest">校園野外實驗 (折射探勘)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold text-red-500">W4 (10/1)</td>
+                            <td class="p-4 text-sm italic">地球物理專題演講 (甘禮有博士)</td>
+                            <td class="p-4 text-sm text-gray-400">實務經驗分享</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W5 (10/8)</td>
+                            <td class="p-4 text-sm italic text-blue-600">折射探勘學</td>
+                            <td class="p-4 text-sm italic text-blue-600 underline">Hugging Face Space 製作互動程式</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W6 (10/15)</td>
+                            <td class="p-4 text-sm">重力探勘學</td>
+                            <td class="p-4 text-sm">Google Colab 使用</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold text-purple-600">W7 (10/22)</td>
+                            <td class="p-4 text-sm italic text-purple-600">重力探勘學</td>
+                            <td class="p-4 text-sm italic text-purple-600 underline">Gemini API, Dify 自動化</td>
+                        </tr>
+                        <tr class="bg-red-50 text-red-700">
+                            <td class="p-4 font-bold text-center" colspan="3">W8 (10/29) 期中考試</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W9-10</td>
+                            <td class="p-4 text-sm">板塊構造與地震</td>
+                            <td class="p-4 text-sm">pygmt 進階地圖製作</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W11-12</td>
+                            <td class="p-4 text-sm">板塊構造與地磁</td>
+                            <td class="p-4 text-sm">obspy 地震波形處理</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W13 (12/3)</td>
+                            <td class="p-4 text-sm text-purple-600 underline font-semibold">板塊構造與地熱</td>
+                            <td class="p-4 text-sm text-purple-600 underline">Gemini API 申請與 Dify 整合</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W14 (12/10)</td>
+                            <td class="p-4 text-sm font-semibold text-red-600">專題演講：黃有志 博士</td>
+                            <td class="p-4 text-sm italic text-gray-500">阿蘇火山、熊本地震、嘉南觀測</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold">W15 (12/17)</td>
+                            <td class="p-4 text-sm font-semibold text-red-600">專題演講：廖勿渝 博士</td>
+                            <td class="p-4 text-sm italic text-gray-500">AI 遇上地震學：自動化監測</td>
+                        </tr>
+                        <tr class="bg-green-50">
+                            <td class="p-4 font-bold">W16 (12/24)</td>
+                            <td colspan="2" class="p-4 font-bold text-green-800 text-center">期末專題發表 (Final Presentation)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold italic">W17 (12/31)</td>
+                            <td colspan="2" class="p-4 text-sm">校外參訪：中油大樓 (台北市信義區)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold italic">W18 (1/7)</td>
+                            <td colspan="2" class="p-4 text-sm">校外參訪：地質調查所</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-10 text-center">
+        <p>© 2024-2025 地球物理通論 學習歷程 - 學生報告專用</p>
     </footer>
-
 </body>
 </html>
