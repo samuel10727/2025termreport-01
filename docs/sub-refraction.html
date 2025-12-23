@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子網頁專題報告 | 地球物理</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+   <!-- Navbar -->
+<nav class="sticky top-0 bg-white/90 backdrop-blur shadow-sm z-50 py-4 px-6">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+        <!-- 這裡必須指向 index.html -->
+        <a href="index.html" class="text-blue-600 font-bold flex items-center gap-2">
+            <i class="fas fa-arrow-left"></i> 返回主進度表
+        </a>
+        <span class="text-gray-400 text-sm italic underline">Geophysics Report</span>
+    </div>
+</nav>
+
+    <article class="max-w-4xl mx-auto py-16 px-6">
+        
+        <!-- Title Section -->
+        <header class="mb-16">
+            <span class="text-blue-500 font-bold tracking-widest uppercase text-sm">Learning Milestone</span>
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 mb-6">在此輸入專題名稱 (例如：折射公式推導)</h1>
+            <p class="text-xl text-gray-500">這是一篇關於我們如何整合地球物理理論與資料科學工具的詳細記錄。</p>
+        </header>
+
+        <!-- 區塊一：內容簡介與理論 -->
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">一、理論摘要與過程</h2>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 mb-10">
+                <p class="mb-4 text-gray-700">在這裡輸入您的文字內容。例如折射公式的推導邏輯、演講的核心觀點，或者是與 AI (ChatGPT/Gemini) 對話協助程式撰寫的過程。</p>
+                <div class="bg-gray-900 text-gray-100 p-6 rounded-xl font-mono text-sm overflow-x-auto my-6 italic">
+                    # 若為程式碼區塊範例<br>
+                    import obspy<br>
+                    st = obspy.read("seismic_data.sac")<br>
+                    st.plot()
+                </div>
+            </div>
+
+            <!-- 圖片預留區 A -->
+            <div class="space-y-4">
+                <div class="w-full h-80 bg-gray-200 rounded-3xl border-4 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
+                    <i class="far fa-image text-5xl mb-3"></i>
+                    <p class="font-bold">圖片預留區 (例如：現場操作照片、公式手稿截圖)</p>
+                    <p class="text-xs uppercase">建議尺寸: 1200x800px</p>
+                </div>
+                <p class="text-center text-sm text-gray-500 italic">圖 1：相關實驗現場或推導截圖說明</p>
+            </div>
+        </section>
+
+        <!-- 區塊二：技術實踐 -->
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-6 border-l-4 border-purple-500 pl-4">二、技術實踐與結果</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 圖片預留區 B -->
+                <div class="h-64 bg-gray-200 rounded-3xl border-4 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
+                    <i class="fas fa-chart-line text-4xl mb-2"></i>
+                    <p class="text-xs font-bold text-center px-4">圖片預留區 (例如：PyGMT 地圖成果、ObsPy 波形圖)</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-gray-600 italic border-l-2 border-gray-200 pl-4 text-sm leading-relaxed">
+                        在這裡您可以描述圖片中的數據意義。例如：「透過 PyGMT 繪製的板塊邊界圖清楚顯示了環太平洋地震帶的分布情況，AI 輔助修正了經緯度座標的投影錯誤。」
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 區塊三：心得與反思 -->
+        <section class="bg-blue-600 text-white p-10 rounded-[3rem] shadow-xl">
+            <h2 class="text-2xl font-bold mb-4 italic"><i class="fas fa-lightbulb mr-2"></i> 學習反思 Reflection</h2>
+            <p class="text-blue-100 leading-relaxed">
+                記錄這堂課或這個實驗帶給你最大的啟發。例如與黃有志博士交流後的職業規劃思考，或是第一次成功在 Hugging Face Space 跑出自己寫的互動程式時的成就感。
+            </p>
+        </section>
+
+    </article>
+
+    <footer class="bg-gray-100 py-12 text-center text-gray-400 text-sm">
+        <p>地球物理通論 | 數位學習歷程文件</p>
+    </footer>
+
+</body>
+</html>
