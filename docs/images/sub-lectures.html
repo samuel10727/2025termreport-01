@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 地震學專題演講 | 地球物理通論</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #ffffff; color: #334155; }
+        .content-box { border: 1px solid #f1f5f9; padding: 2.5rem; border-radius: 1rem; background-color: #ffffff; margin-bottom: 2.5rem; }
+        .tech-accent { border-left: 5px solid #06b6d4; padding-left: 1.5rem; }
+        .image-placeholder { background-color: #f8fafc; border: 2px dashed #cbd5e1; min-height: 350px; display: flex; align-items: center; justify-content: center; color: #94a3b8; border-radius: 1rem; margin: 1.5rem 0; }
+        .concept-tag { background-color: #ecfeff; color: #0891b2; padding: 0.2rem 0.75rem; border-radius: 999px; font-size: 0.85rem; font-weight: bold; margin-right: 0.5rem; }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- 導覽導航 -->
+    <nav class="max-w-5xl mx-auto py-6 px-6">
+        <a href="index.html" class="text-cyan-600 hover:text-cyan-700 font-bold transition">← 返回主進度表</a>
+    </nav>
+
+    <article class="max-w-5xl mx-auto py-8 px-6">
+        
+        <!-- 演講標題 -->
+        <header class="mb-16 border-b pb-12">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="concept-tag">深度學習</span>
+                <span class="concept-tag">全自動化監測</span>
+                <span class="concept-tag">範式轉移</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-6">AI 遇上地震學：從深度學習到全自動化監測</h1>
+            <p class="text-xl text-slate-500 leading-relaxed">主講人：廖勿渝 博士 | 整理：地球物理通論學生</p>
+        </header>
+
+        <!-- 第一部分：基礎與核心 -->
+        <section class="content-box shadow-sm">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800 flex items-center">
+                <span class="w-8 h-8 bg-cyan-600 text-white rounded-full flex items-center justify-center mr-3 text-sm">01</span>
+                地震監測的核心範式
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="tech-accent">
+                    <h3 class="font-bold text-lg mb-2 text-cyan-800">長期監測：地震編目 (Cataloging)</h3>
+                    <p class="text-sm leading-relaxed text-slate-600">目的在於累積高精度數據，探索斷層幾何與應力演化規律。透過 AI 降低偵測閾值，我們可以「照亮」地底微細構造。</p>
+                </div>
+                <div class="tech-accent border-cyan-300">
+                    <h3 class="font-bold text-lg mb-2 text-cyan-800">短期監測：地震預警 (EEW)</h3>
+                    <p class="text-sm leading-relaxed text-slate-600">利用 P 波與 S 波的時間差搶時間，在破壞性強的 S 波抵達前發出預警，達成減災目標。</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-slate-300 p-6 rounded-xl font-mono text-sm">
+                <p class="text-cyan-400 mb-2">// 地震觀測的物理本質</p>
+                <p>觀測波形 O(t) = 震源 S(t) * 傳播路徑 P(t) * 儀器響應 I(t)</p>
+                <p>本質是一個複雜的「非線性反演問題 (Inverse Problem)」。</p>
+            </div>
+
+            <div class="image-placeholder flex-col">
+                <span class="text-lg font-bold">請在此放置：地震破裂與 P/S 波形紀錄圖</span>
+                <span class="text-xs mt-2 text-slate-400">展示 Cataloging 與 EEW 的區分與波形示意</span>
+            </div>
+        </section>
+
+        <!-- 第二部分：深度學習與預警方法 -->
+        <section class="content-box shadow-sm">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800 flex items-center">
+                <span class="w-8 h-8 bg-cyan-600 text-white rounded-full flex items-center justify-center mr-3 text-sm">02</span>
+                預警方法學與深度學習
+            </h2>
+            <p class="mb-6 leading-relaxed text-slate-700">
+                演講中區分了**單站式 (Single-station)** 與 **網路式 (Network-based)** 預警。單站式雖快但誤差大，網路式準確但需關聯 (Association)。深度學習的加入，實現了「端到端學習 (End-to-End Learning)」，能自動提取特徵，處理具備非平穩性的複雜波形。
+            </p>
+
+            <div class="image-placeholder flex-col">
+                <span class="text-lg font-bold">請在此放置：古騰堡－芮氏規模律 (G-R Law) 圖表</span>
+                <span class="text-xs mt-2 text-slate-400">展現 b 值斜率與 AI 偵測閾值的科學關聯</span>
+            </div>
+        </section>
+
+        <!-- 第三部分：核心模型技術詳解 -->
+        <section class="content-box shadow-sm bg-slate-50">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800 flex items-center">
+                <span class="w-8 h-8 bg-cyan-600 text-white rounded-full flex items-center justify-center mr-3 text-sm">03</span>
+                核心模型技術：ARRU, RED-PAN, RockNet
+            </h2>
+            
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-cyan-700 mb-2">ARRU 模型：精準震相識別</h4>
+                    <p class="text-sm">結合 **Attention (注意機制)** 的 U-Net 結構，能自動聚焦波形特徵點，有效排除背景噪訊。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-cyan-700 mb-2">RED-PAN 模型：重疊波形分離</h4>
+                    <p class="text-sm">解決「連發地震」難點。透過回歸與分類並行，從混合波形中成功分離極近時間內的兩次事件。</p>
+                    <div class="image-placeholder h-48 mt-4 border-solid bg-slate-100">
+                        <span class="text-sm font-bold">圖片：RED-PAN 分離重疊波形示意</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-cyan-700 mb-2">RockNet：多任務雜訊過濾</h4>
+                    <p class="text-sm">透過頻譜分析區分地震、落石與車輛訊號，大幅降低高山觀測站的「虛警率」。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四部分：SEISYNC 系統整合 -->
+        <section class="content-box shadow-sm">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800 flex items-center">
+                <span class="w-8 h-8 bg-cyan-600 text-white rounded-full flex items-center justify-center mr-3 text-sm">04</span>
+                全自動化系統 SEISYNC
+            </h2>
+            <p class="mb-6 leading-relaxed text-slate-700">
+                這是系統整合的巔峰之作。數據包在 **RED-PAN (偵測)**、**GaMMA (關聯)** 與 **NonLinLoc (定位)** 之間流動。此架構將領域知識 (Domain Knowledge) 嵌入 AI，實現了從數據到結果的全自動化。
+            </p>
+
+            <div class="image-placeholder flex-col">
+                <span class="text-lg font-bold">請在此放置：SEISYNC 系統架構流程圖</span>
+                <span class="text-xs mt-2 text-slate-400">展示從數據採集到 3D 速度模型定位的流轉</span>
+            </div>
+        </section>
+
+        <!-- 專業總結 -->
+        <section class="bg-cyan-900 text-white p-10 rounded-[2rem] shadow-xl">
+            <h2 class="text-2xl font-bold mb-6 italic"><i class="fas fa-microchip mr-3"></i> 專業心得與技術總結</h2>
+            <div class="space-y-4 text-cyan-100 leading-relaxed">
+                <p>這份報告呈現了當代地震學最高標準：<strong>「數據驅動」與「物理驅動」的深度結合。</strong></p>
+                <p>1. <strong>偵測難點突破：</strong> 解決了高信噪比環境下的微小地震識別，對孕震機制的理解具有決定性意義。</p>
+                <p>2. <strong>即時性突破：</strong> SEISYNC 系統將專家數分鐘的工作縮短至數秒，在與時間賽跑的防災工作中至關重要。</p>
+                <p>3. <strong>信號解構能力：</strong> 透過 RockNet 讓地震儀進化為「地表活動全方位監測器」。</p>
+                <p class="mt-6 pt-6 border-t border-cyan-800 text-white font-bold">
+                    未來地科研究者的必備職能：地科專業 (Domain) + 工具能力 (Programming) + 解決思維 (Problem Solving)。
+                </p>
+            </div>
+        </section>
+
+    </article>
+
+    <footer class="py-12 text-center text-slate-400 text-sm">
+        <p>地球物理通論 | 廖勿渝博士專題演講紀錄</p>
+        <a href="index.html" class="text-cyan-600 hover:underline block mt-2">返回課程主網頁</a>
+    </footer>
+
+</body>
+</html>
