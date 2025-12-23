@@ -31,7 +31,7 @@
                 <span class="concept-tag">範式轉移</span>
             </div>
             <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-6">AI 遇上地震學：從深度學習到全自動化監測</h1>
-            <p class="text-xl text-slate-500 leading-relaxed">主講人：廖勿渝 博士 | 整理：地球物理通論學生</p>
+            <p class="text-xl text-slate-500 leading-relaxed">主講人：廖勿渝 博士 | 整理</p>
         </header>
 
         <!-- 第一部分：基礎與核心 -->
@@ -56,12 +56,10 @@
                 <p class="text-cyan-400 mb-2">// 地震觀測的物理本質</p>
                 <p>觀測波形 O(t) = 震源 S(t) * 傳播路徑 P(t) * 儀器響應 I(t)</p>
                 <p>本質是一個複雜的「非線性反演問題 (Inverse Problem)」。</p>
-            </div>
-
-            <div class="image-placeholder flex-col">
-                <span class="text-lg font-bold">請在此放置：地震破裂與 P/S 波形紀錄圖</span>
-                <span class="text-xs mt-2 text-slate-400">展示 Cataloging 與 EEW 的區分與波形示意</span>
-            </div>
+            <div class="overflow-hidden rounded-3xl shadow-xl">
+    <img src="images/螢幕擷取畫面 2025-12-24 065801.png
+" alt="野外實驗現場" class="w-full h-auto object-cover">
+</div>
         </section>
 
         <!-- 第二部分：深度學習與預警方法 -->
@@ -74,10 +72,9 @@
                 演講中區分了**單站式 (Single-station)** 與 **網路式 (Network-based)** 預警。單站式雖快但誤差大，網路式準確但需關聯 (Association)。深度學習的加入，實現了「端到端學習 (End-to-End Learning)」，能自動提取特徵，處理具備非平穩性的複雜波形。
             </p>
 
-            <div class="image-placeholder flex-col">
-                <span class="text-lg font-bold">請在此放置：古騰堡－芮氏規模律 (G-R Law) 圖表</span>
-                <span class="text-xs mt-2 text-slate-400">展現 b 值斜率與 AI 偵測閾值的科學關聯</span>
-            </div>
+     <div class="overflow-hidden rounded-3xl shadow-xl">
+    <img src="images/860614ab11796c34fdf7bfa7a32dae37.png" alt="野外實驗現場" class="w-full h-auto object-cover">
+</div>
         </section>
 
         <!-- 第三部分：核心模型技術詳解 -->
@@ -96,11 +93,10 @@
                 <div class="bg-white p-6 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-cyan-700 mb-2">RED-PAN 模型：重疊波形分離</h4>
                     <p class="text-sm">解決「連發地震」難點。透過回歸與分類並行，從混合波形中成功分離極近時間內的兩次事件。</p>
-                    <div class="image-placeholder h-48 mt-4 border-solid bg-slate-100">
-                        <span class="text-sm font-bold">圖片：RED-PAN 分離重疊波形示意</span>
-                    </div>
-                </div>
-
+                 
+<div class="overflow-hidden rounded-3xl shadow-xl">
+    <img src="螢幕擷取畫面 2025-12-24 065400.png" alt="野外實驗現場" class="w-full h-auto object-cover">
+</div>
                 <div class="bg-white p-6 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-cyan-700 mb-2">RockNet：多任務雜訊過濾</h4>
                     <p class="text-sm">透過頻譜分析區分地震、落石與車輛訊號，大幅降低高山觀測站的「虛警率」。</p>
