@@ -6,7 +6,7 @@
     <title>AI 地震學專題演講 | 地球物理通論</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
         body { font-family: 'Noto Sans TC', sans-serif; background-color: #ffffff; color: #334155; }
         .content-box { border: 1px solid #f1f5f9; padding: 2.5rem; border-radius: 1rem; background-color: #ffffff; margin-bottom: 2.5rem; }
         .tech-accent { border-left: 5px solid #06b6d4; padding-left: 1.5rem; }
@@ -58,10 +58,9 @@
                 <p>本質是一個複雜的「非線性反演問題 (Inverse Problem)」。</p>
             </div>
 
-            <div class="image-placeholder flex-col">
-                <span class="螢幕擷取畫面 2025-12-24 065400.png">請在此放置：地震破裂與 P/S 波形紀錄圖</span>
-                <span class="text-xs mt-2 text-slate-400">展示 Cataloging 與 EEW 的區分與波形示意</span>
-            </div>
+       <div class="overflow-hidden rounded-3xl shadow-xl">
+    <img src="images/螢幕擷取畫面 2025-12-24 064908.png" alt="野外實驗現場" class="w-full h-auto object-cover">
+</div>
         </section>
 
         <!-- 第二部分：深度學習與預警方法 -->
@@ -74,10 +73,9 @@
                 演講中區分了**單站式 (Single-station)** 與 **網路式 (Network-based)** 預警。單站式雖快但誤差大，網路式準確但需關聯 (Association)。深度學習的加入，實現了「端到端學習 (End-to-End Learning)」，能自動提取特徵，處理具備非平穩性的複雜波形。
             </p>
 
-            <div class="image-placeholder flex-col">
-                <span class="text-lg font-bold">請在此放置：古騰堡－芮氏規模律 (G-R Law) 圖表</span>
-                <span class="text-xs mt-2 text-slate-400">展現 b 值斜率與 AI 偵測閾值的科學關聯</span>
-            </div>
+         <div class="overflow-hidden rounded-3xl shadow-xl">
+    <img src="images/field_work_1.png" alt="野外實驗現場" class="w-full h-auto object-cover">
+</div>
         </section>
 
         <!-- 第三部分：核心模型技術詳解 -->
@@ -96,9 +94,9 @@
                 <div class="bg-white p-6 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-cyan-700 mb-2">RED-PAN 模型：重疊波形分離</h4>
                     <p class="text-sm">解決「連發地震」難點。透過回歸與分類並行，從混合波形中成功分離極近時間內的兩次事件。</p>
-                    <div class="image-placeholder h-48 mt-4 border-solid bg-slate-100">
-                        <span class="text-sm font-bold">圖片：RED-PAN 分離重疊波形示意</span>
-                    </div>
+                    <div class="overflow-hidden rounded-3xl shadow-xl">
+    <img src="images/field_work_1.png" alt="野外實驗現場" class="w-full h-auto object-cover">
+</div>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl border border-slate-200">
@@ -118,10 +116,9 @@
                 這是系統整合的巔峰之作。數據包在 **RED-PAN (偵測)**、**GaMMA (關聯)** 與 **NonLinLoc (定位)** 之間流動。此架構將領域知識 (Domain Knowledge) 嵌入 AI，實現了從數據到結果的全自動化。
             </p>
 
-            <div class="image-placeholder flex-col">
-                <span class="text-lg font-bold">請在此放置：SEISYNC 系統架構流程圖</span>
-                <span class="text-xs mt-2 text-slate-400">展示從數據採集到 3D 速度模型定位的流轉</span>
-            </div>
+           <div class="overflow-hidden rounded-3xl shadow-xl">
+    <img src="images/field_work_1.png" alt="野外實驗現場" class="w-full h-auto object-cover">
+</div>
         </section>
 
         <!-- 專業總結 -->
