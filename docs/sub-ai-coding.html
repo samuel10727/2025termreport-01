@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科科斯板塊專題報告 | PyGMT 實作</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #ffffff; color: #334155; }
+        .content-box { border: 1px solid #f1f5f9; padding: 2rem; border-radius: 0.75rem; background-color: #ffffff; margin-bottom: 2rem; }
+        .highlight-blue { border-left: 5px solid #3b82f6; padding-left: 1rem; }
+        .highlight-red { border-left: 5px solid #ef4444; padding-left: 1rem; }
+        .tech-tag { background-color: #f1f5f9; color: #475569; padding: 0.2rem 0.6rem; border-radius: 0.5rem; font-size: 0.875rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽導航 -->
+    <nav class="max-w-5xl mx-auto py-6 px-6">
+        <a href="index.html" class="text-blue-600 hover:underline font-bold">← 返回主進度表</a>
+    </nav>
+
+    <article class="max-w-5xl mx-auto py-8 px-6">
+        
+        <!-- 標題與簡介 -->
+        <header class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="tech-tag">AI 輔助程式撰寫</span>
+                <span class="tech-tag">PyGMT 繪圖成果</span>
+            </div>
+            <h1 class="text-4xl font-bold text-slate-900 mb-4">科科斯板塊 (Cocos Plate) 地球物理分析</h1>
+            <p class="text-lg text-slate-500 italic">透過 AI 指令協助產出的高品質 PyGMT 地質圖，探討板塊運動與自然災害的關聯。</p>
+        </header>
+
+        <!-- 成果展示圖區 -->
+        <div class="content-box shadow-sm">
+            <h2 class="text-xl font-bold mb-6 text-slate-800 italic">展示圖：科科斯板塊邊界與構造特徵</h2>
+            <!-- 插入您的 PyGMT 圖片 -->
+            <div class="mb-4">
+                <img src="images/cocos_plate_map.png" alt="Cocos Plate PyGMT Map" class="w-full rounded-lg shadow-lg">
+            </div>
+            <p class="text-sm text-center text-slate-400">圖 1：科科斯板塊邊界、震央分布與火山弧分布圖 (由 PyGMT 繪製)</p>
+        </div>
+
+        <!-- 板塊專業說明區 -->
+        <div class="content-box">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800">科科斯板塊專題說明</h2>
+            
+            <div class="space-y-10">
+                <!-- 1. 板塊概況 -->
+                <section>
+                    <h3 class="text-lg font-bold mb-3 text-blue-700">1. 地形與板塊概況 (Topography)</h3>
+                    <p class="leading-relaxed">
+                        科科斯板塊（Cocos Plate）是一個位於中美洲西岸太平洋底的年輕海洋板塊。它的年齡相對較輕，因此溫度較高且密度較低，這導致其隱沒角度在不同區域有顯著差異。其北界為中美洲海溝（MAT），南界與西界則是張裂型的東太平洋隆起（EPR）。
+                    </p>
+                </section>
+
+                <!-- 2. 板塊邊界種類與地形景觀 -->
+                <section>
+                    <h3 class="text-lg font-bold mb-3 text-slate-800">2. 板塊邊界種類與地形景觀</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="highlight-blue bg-blue-50 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-blue-800 mb-2">張裂型邊界 (Divergent)</h4>
+                            <p class="text-sm"><strong>代表區域：</strong> 東太平洋隆起 (EPR)</p>
+                            <p class="text-sm"><strong>地形景觀：</strong> 洋中脊 (Mid-ocean Ridge)。在此處，地幔物質上湧並冷卻，形成新的海洋地殼，造成海底擴張。</p>
+                        </div>
+                        <div class="highlight-red bg-red-50 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-red-800 mb-2">聚合型邊界 (Convergent)</h4>
+                            <p class="text-sm"><strong>代表區域：</strong> 中美洲海溝 (Middle America Trench)</p>
+                            <p class="text-sm"><strong>地形景觀：</strong> 海溝 (Trench) 與 火山弧 (Volcanic Arc)。科科斯板塊在此隱沒至北美板塊與加勒比板塊下方。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. 火山活動 -->
+                <section>
+                    <h3 class="text-lg font-bold mb-3 text-orange-700">3. 火山活動 (Volcanism)</h3>
+                    <p class="leading-relaxed">
+                        圖中的紅色三角形代表了 **中美洲火山弧 (Central America Volcanic Arc)**。當科科斯板塊隱沒至地下約 100-150 公里處時，板塊攜帶的水分會降低上方地幔的熔點，觸發「助熔熔融 (Flux Melting)」，形成的岩漿上升至地表，形成了從墨西哥到巴拿馬一系列壯觀的火山鏈。
+                    </p>
+                </section>
+
+                <!-- 4. 地震活動與歷史著名地震 -->
+                <section>
+                    <h3 class="text-lg font-bold mb-3 text-red-700">4. 地震活動 (Seismicity)</h3>
+                    <p class="leading-relaxed mb-4">
+                        科科斯板塊的隱沒帶是全球最活躍的地震區之一。由於強烈的摩擦與板塊間的鎖定，常會發生毀滅性的**逆斷層大地震 (Megathrust Earthquakes)**。
+                    </p>
+                    <div class="bg-slate-50 p-4 rounded-lg text-sm space-y-2 border">
+                        <p><strong>• 1985 墨西哥城地震 (M8.0)：</strong> 雖然震央在海岸，但因其長週期地震波與盆地效應，對墨西哥城造成了慘重傷亡。</p>
+                        <p><strong>• 2017 恰帕斯地震 (M8.2)：</strong> 發生在科科斯板塊內部的正斷層地震，是墨西哥近百年來最強的地震之一。</p>
+                        <p><strong>• 1911 格雷羅地震 (M7.6)：</strong> 該區域目前被視為「地震空白區 (Seismic Gap)」，未來發生大震的風險極高。</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- AI 輔助心得 -->
+        <div class="content-box bg-slate-900 text-white border-none">
+            <h2 class="text-xl font-bold mb-4 italic">AI 輔助與科學反思</h2>
+            <p class="leading-relaxed opacity-90 text-sm">
+                在製作本圖的過程中，我利用 AI 工具（如 Gemini/ChatGPT）協助生成 PyGMT 的繪圖腳本。AI 能夠快速提供地圖投影 (projection) 與區域設定 (region) 的參數建議，讓我能更專注於資料的解讀。這張圖清楚地展示了「板塊邊界類型」如何直接決定了「地形與災害」的分布：藍色線條代表的新生地殼張裂，以及紅色線條代表的隱沒破壞。這正是地球物理學中「結構控制特徵」的最佳案例。
+            </p>
+        </div>
+
+    </article>
+
+    <footer class="py-12 text-center text-slate-400 text-sm">
+        <a href="index.html" class="text-blue-600 font-bold">返回主頁面</a>
+        <p class="mt-4">地球物理通論專題報告 - 科科斯板塊分析</p>
+    </footer>
+
+</body>
+</html>
